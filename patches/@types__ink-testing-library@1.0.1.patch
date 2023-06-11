@@ -1,0 +1,10 @@
+diff --git a/index.d.ts b/index.d.ts
+index bf73d64b3a762822e4e094ba8e28c7b2dfac064c..19e77557248bc195a63f53ce1c8cdd34b0e636f6 100644
+--- a/index.d.ts
++++ b/index.d.ts
+@@ -15,4 +15,4 @@ export interface RenderResponse {
+     lastFrame: () => string;
+ }
+ export function cleanup(): void;
+-export function render(tree: InkElement): RenderResponse;
++export function render(tree: InkElement | JSX.Element): RenderResponse;
